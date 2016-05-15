@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tets RoR</title>
+	</head>
+	<body>
+		<h1>Listado Usuarios</h1>
+		<table>
+			<tr>
+				<td>Nombre</td>
+				<td>Email</td>
+			</tr>
+			<% @usuarios.each do |usuario| %>
+				<tr>
+					<td><%= link_to usuario.nombre, usuario %></td>
+					<td><%= usuario.email %></td>
+					<td><%= link_to "Editar", edit_user_path(usuario) %></td>
+					<td><%= link_to "Eliminar", usuario, method: :delete, confirm: "Estas Seguro?" %></td>
+				</tr>
+			<% end %>
+
+			<% if @usuarios.size==0 %>
+				USUARIOS NO ENCONTRADOS
+			<% end %>
+		</table>
+
+		<%= link_to 'Nuevo Usuario', new_user_path %>
+
+	</body>
+</html>
