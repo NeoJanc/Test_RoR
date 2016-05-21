@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+ @font-face {
+    font-family: "font_base";
+    src: url(/lib/janc/fonts/pfbeausanspro-regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "font_nombre";
+    src: url(/lib/janc/fonts/TopModern.otf) format("truetype");
+}
+
+.logo {
+   width: 100%;
+   height: 100%;
+}
+
+.panel-default_rojo {
+  border-color: #BF2D1A;
+  margin-top: 35px;
+}
+
+a {
+  color: #BF2D1A;
+  text-decoration: none;
+}
+
+/*.sube_btn {
+ 	margin-top: -25px;
+}*/
+
+.font_user_base {
+    font-family: "font_base";
+    font-size: 13px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/*
+ * Rojo
+ */
+.boton-rojo {
+  color: #fff;
+  background-color: #BF2D1A;
+  border-color: #313131;
+}
+.boton-rojo:hover,
+.boton-rojo:focus,
+.boton-rojo.focus,
+.boton-rojo:active,
+.boton-rojo.active,
+.open > .dropdown-toggle.boton-rojo {
+  color: #fff;
+  background-color: #A00603;
+  border-color: #313131;
+}
+.boton-rojo:active,
+.boton-rojo.active,
+.open > .dropdown-toggle.boton-rojo {
+  background-image: none;
+}
+.boton-rojo.disabled,
+.boton-rojo[disabled],
+fieldset[disabled] .boton-rojo,
+.boton-rojo.disabled:hover,
+.boton-rojo[disabled]:hover,
+fieldset[disabled] .boton-rojo:hover,
+.boton-rojo.disabled:focus,
+.boton-rojo[disabled]:focus,
+fieldset[disabled] .boton-rojo:focus,
+.boton-rojo.disabled.focus,
+.boton-rojo[disabled].focus,
+fieldset[disabled] .boton-rojo.focus,
+.boton-rojo.disabled:active,
+.boton-rojo[disabled]:active,
+fieldset[disabled] .boton-rojo:active,
+.boton-rojo.disabled.active,
+.boton-rojo[disabled].active,
+fieldset[disabled] .boton-rojo.active {
+  background-color: #BF2D1A;
+  border-color: #A00603;
+}
+.boton-rojo .badge {
+  color: #BF2D1A;
+  background-color: #fff;
+}

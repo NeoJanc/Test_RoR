@@ -15,6 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'bcrypt-ruby', '3.1.2'
+gem 'bootstrap-sass'
+gem 'devise'
 
 group :doc do
 	gem 'sdoc', require: false
